@@ -33,8 +33,6 @@ Clean the dataset and prepare features for ML algorithms.
 3. Assemble numeric and encoded features into a single feature vector with `VectorAssembler`.
 
 **Code Output:**
-
-===== Task 1: Features with ChurnIndex =====
 +--------------------+----------+
 |            features|ChurnIndex|
 +--------------------+----------+
@@ -73,7 +71,6 @@ Select the top 5 most important features using Chi-Square feature selection.
 2. Print the selected feature vectors.
 
 **Code Output :**
-===== Top 5 Selected Features =====
 +--------------------+----------+
 |    selectedFeatures|ChurnIndex|
 +--------------------+----------+
@@ -102,8 +99,6 @@ Use CrossValidator to tune models and compare their AUC performance.
 3. Evaluate and print best model results.
 
 **Code Output :**
-===== Cross-Validation Model Comparison =====
-
 Tuning LogisticRegression...
 LogisticRegression Best Model Accuracy (AUC): 0.76
 Best Params for LogisticRegression: regParam=0.0, maxIter=100
