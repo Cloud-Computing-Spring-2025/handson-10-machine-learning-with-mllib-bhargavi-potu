@@ -33,6 +33,8 @@ Clean the dataset and prepare features for ML algorithms.
 3. Assemble numeric and encoded features into a single feature vector with `VectorAssembler`.
 
 **Code Output:**
+```
+===== Task 1: Features with ChurnIndex =====
 +--------------------+----------+
 |            features|ChurnIndex|
 +--------------------+----------+
@@ -43,7 +45,7 @@ Clean the dataset and prepare features for ML algorithms.
 |[1.0,0.0,0.0,1.0,...|       1.0|
 +--------------------+----------+
 only showing top 5 rows
-
+```
 ### Task 2: Train and Evaluate Logistic Regression Model
 
 **Objective:**  
@@ -71,6 +73,7 @@ Select the top 5 most important features using Chi-Square feature selection.
 2. Print the selected feature vectors.
 
 **Code Output :**
+```
 +--------------------+----------+
 |    selectedFeatures|ChurnIndex|
 +--------------------+----------+
@@ -81,7 +84,7 @@ Select the top 5 most important features using Chi-Square feature selection.
 |[1.0,0.0,1.0,1.0,...|       1.0|
 +--------------------+----------+
 only showing top 5 rows
-
+```
 ### Task 4: Hyperparameter Tuning and Model Comparison
 
 **Objective:**  
@@ -99,6 +102,7 @@ Use CrossValidator to tune models and compare their AUC performance.
 3. Evaluate and print best model results.
 
 **Code Output :**
+```
 Tuning LogisticRegression...
 LogisticRegression Best Model Accuracy (AUC): 0.76
 Best Params for LogisticRegression: regParam=0.0, maxIter=100
@@ -114,7 +118,7 @@ Best Params for RandomForest: maxDepth=5, numTrees=20
 Tuning GBT...
 GBT Best Model Accuracy (AUC): 0.82
 Best Params for GBT: maxDepth=5, maxIter=20
-
+```
 ##  Execution Instructions
 
 ### 1. Prerequisites
